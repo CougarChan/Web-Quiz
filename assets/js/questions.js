@@ -15,29 +15,26 @@ answer: "alerts"
 },
 
 {
-  title:"",
-  choices:["","","",""],
-  answers
-
-
-
+  title:"Arrays in Javascript can be used to store____?",
+  choices:["Numbers and strings","other arrays ","booleans","all of the above"],
+  answers: "all of the above"
 },
 {
-    title:"",
-    choices:["","","",""],
-    answers
+    title:"Booleans operators that can be used in JavaScripts include:",
+    choices:["And Operators &&","Or Operators ||","Not Operators !","All of the above"],
+    answers :"All of the above"
+  
+  },
+  {
+    title:"The condition is an if /else statement is enclosed within ____",
+    choices:["quotes","curly brackets","parenthesis","square brackets"],
+    answers: "parenthesis"
   
   
   
   },
-  {
-    title:"",
-    choices:["","","",""],
-    answers
-  
-  
-  
-  }
+
+];
   
   
 
@@ -54,4 +51,3 @@ answer: "alerts"
 
 
 
-]
