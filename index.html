@@ -4,48 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Web Quiz</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Web-Quiz</title>
+
 </head>
+
+<!--Start of body-->
+
 <body>
- <header class="wrapper">
-    <div class="Highscore">
-       <button id="score"> View highscores
-       </button>
-    </div>
-    <div id="timer" class="timer">
-      <p> Time :<span id = "time">0</span></p>
-    </div>
- </header>
-
-
-    <section id="start-screen" class="main">
-        <div>
-    <h1>Code Quiz</h1>
-    <P>Here you will be given a few Questions and you will do your best to go through with them and complete them within a certain time frame and will be scored.</P>
-   <button>Start quiz</button>
-</section>
-    
-
-    <div>
-        <h1 id="question.title" class="hide"></h1> 
-           <div id="data.choices" class="choices"></div>     
+   <header class="header">
+    <div class="scores"><a href="highscore.html">Highscores</a></div>
+    <div class="timer">Time: <span id="time">0</span></div>
+   </header>
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Web-Quiz</h1>
+            <p>
+              Hello! Welcome to my Web-Quiz you will be going over a couple of questions to test your knowledge on javascript and will be provided
+              with a highscore which can then be provided Thank you and enjoy.
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
     </div>
 
-   <section id="finished-screen" class="hide">
-       <h2>
-           Your done
-       </h2>
-    <p>Your final score is</p> <span id="score"></span>
-    </p>
-    <p>Enter initial: <input type="text" id="initials" max="3"/>
-        <button id="sub-button">Submit</button>
-    </p>
-   </section>
-   <div>
-   </div>
+   <!--Question section-->
 
-<script src="./assets/js/questions.js"></script>
-<script src="./assets/js/script.js"></script>
+    <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+    </div>
+
+
+    <div id="end-screen" class="hide">
+        <h2>Finished!</h2>
+        <p>Your final score is <span id="final-score"></span></p>
+        <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+        </p>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+</div>
+
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
