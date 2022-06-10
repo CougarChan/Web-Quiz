@@ -8,8 +8,7 @@
     <title>Web Quiz</title>
 </head>
 <body>
-    <div class="wrapper">
- <header class=" header">
+ <header class="wrapper">
     <div class="Highscore">
        <button id="score"> View highscores
        </button>
@@ -18,19 +17,22 @@
       <p> Time :<span id = "time">0</span></p>
     </div>
  </header>
-    <section>
+
+
+    <section id="start-screen" class="main">
+        <div>
     <h1>Code Quiz</h1>
     <P>Here you will be given a few Questions and you will do your best to go through with them and complete them within a certain time frame and will be scored.</P>
    <button>Start quiz</button>
 </section>
-    </div>
+    
 
     <div>
         <h1 id="question.title" class="hide"></h1> 
            <div id="data.choices" class="choices"></div>     
     </div>
 
-   <section id=" hide" class="hide">
+   <section id="finished-screen" class="hide">
        <h2>
            Your done
        </h2>
