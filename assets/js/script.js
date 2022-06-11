@@ -25,7 +25,6 @@ function startQuiz() {
 
 
   timerId = setInterval(clockTick, 1000);
-
   timerTI.textContent = time;
 
   getQuestion();
@@ -33,9 +32,7 @@ function startQuiz() {
 
 // This function is what retrieves the questions from its javascript file
 function getQuestion() {
-
-  var currentQuestion = questions[currentQuestionIndex];
-
+   var currentQuestion = questions[currentQuestionIndex]
   // questions start
   var titleEl = document.getElementById("question-title");
   titleEl.textContent = currentQuestion.title;
